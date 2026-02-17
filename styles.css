@@ -48,8 +48,6 @@ body > img {
   color: #444;
   font-size: 1rem;
 }
-``  
-
 *{ box-sizing:border-box; } 
 
 body{ 
@@ -84,7 +82,7 @@ body{
 
 } 
 
-.subtitle{ 
+.subtitle{
 
   color:var(--muted); 
 
@@ -94,7 +92,7 @@ body{
 
   
 
-.card{ 
+.card{
 
   background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.03)); 
 
@@ -112,7 +110,7 @@ body{
 
   
 
-.form{ 
+.form{
 
   display:flex; 
 
@@ -124,7 +122,7 @@ body{
 
   
 
-.grid{ 
+.grid{
 
   display:grid; 
 
@@ -136,7 +134,7 @@ body{
 
   
 
-.field label{ 
+.field label{
 
   display:block; 
 
@@ -146,7 +144,7 @@ body{
 
 } 
 
-.field input, .field select{ 
+.field input, .field select{
 
   width:100%; 
 
@@ -162,7 +160,7 @@ body{
 
 } 
 
-.hint{ 
+.hint{
 
   color: var(--muted); 
 
@@ -170,7 +168,7 @@ body{
 
   
 
-.fieldset{ 
+.fieldset{
 
   border: 1px dashed var(--border); 
 
@@ -180,7 +178,7 @@ body{
 
 } 
 
-.check{ 
+.check{
 
   display:flex; 
 
@@ -196,7 +194,7 @@ body{
 
   
 
-.btn{ 
+.btn{
 
   padding: 12px 14px; 
 
@@ -214,7 +212,7 @@ body{
 
 } 
 
-.btn:hover{ 
+.btn:hover{
 
   background: rgba(110,168,254,.25); 
 
@@ -222,7 +220,7 @@ body{
 
   
 
-.resultText{ 
+.resultText{
 
   font-size: 1.1rem; 
 
@@ -230,7 +228,7 @@ body{
 
 } 
 
-.tipText{ 
+.tipText{
 
   color: var(--muted); 
 
@@ -240,7 +238,7 @@ body{
 
   
 
-.footer{ 
+.footer{
 
   margin-top: 18px; 
 
@@ -252,12 +250,31 @@ body{
 
   
 
+.footer-nav {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.footer-nav a {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+
+.footer-nav a:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
 /* Mobile */ 
 
 @media (max-width: 640px){ 
 
   .grid{ grid-template-columns: 1fr; } 
 
-} 
+}
 
- 

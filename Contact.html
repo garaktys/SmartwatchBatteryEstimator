@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact - Smartwatch Battery Estimator</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <img src="logo.png" alt="Smartwatch Battery Estimator Logo" />
+
+  <main class="container">
+    <header class="header">
+      <h1>Contact</h1>
+      <p class="subtitle">Heb je vragen of feedback? Neem contact met ons op!</p>
+    </header>
+
+    <section class="card">
+      <form id="contactForm" class="form">
+        <div class="field">
+          <label for="name">Naam</label>
+          <input id="name" type="text" placeholder="Je naam" required />
+        </div>
+
+        <div class="field">
+          <label for="email">E-mailadres</label>
+          <input id="email" type="email" placeholder="jouw@email.com" required />
+        </div>
+
+        <div class="field">
+          <label for="subject">Onderwerp</label>
+          <select id="subject" required>
+            <option value="">-- Selecteer een onderwerp --</option>
+            <option value="feedback">Feedback / Suggesties</option>
+            <option value="bug">Bug rapport</option>
+            <option value="feature">Feature verzoek</option>
+            <option value="other">Overig</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="message">Bericht</label>
+          <textarea id="message" rows="6" placeholder="Je bericht hier..." required></textarea>
+        </div>
+
+        <button class="btn" type="submit">Verstuur bericht</button>
+      </form>
+    </section>
+
+    <section class="card">
+      <h2>Directe contactgegevens</h2>
+      <div class="contact-info">
+        <p>
+          <strong>Auteur:</strong> Casper van Geet
+        </p>
+        <p>
+          <strong>Project:</strong> Smartwatch Battery Estimator (GitHub Training)
+        </p>
+        <p>
+          <strong>Email:</strong> <a href="mailto:casper@example.com">casper@example.com</a>
+        </p>
+        <p>
+          <strong>GitHub:</strong> <a href="https://github.com/caspervangeet" target="_blank">github.com/caspervangeet</a>
+        </p>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Veelgestelde vragen (FAQ)</h2>
+      <details>
+        <summary>Hoe nauwkeurig zijn deze berekeningen?</summary>
+        <p>Dit is een demo-applicatie. De batterijduurschattingen zijn gebaseerd op gemiddelde verbruiksprofielen en kunnen in werkelijkheid variëren afhankelijk van veel factoren.</p>
+      </details>
+      <details>
+        <summary>Welke smartwatches worden ondersteund?</summary>
+        <p>Momenteel kun je kiezen uit Basic, Standard, Pro en Apple Watch Series 11. Je kunt ook aangepaste mAh-waarden invoeren.</p>
+      </details>
+      <details>
+        <summary>Kan ik mijn eigen apparaatprofiel toevoegen?</summary>
+        <p>Op dit moment niet via de UI, maar je kunt het JavaScript-bestand aanpassen om meer profielen toe te voegen.</p>
+      </details>
+    </section>
+
+    <nav class="footer-nav">
+      <a href="index.html">← Terug naar Estimator</a>
+    </nav>
+
+    <footer class="footer">
+      <p>Demo voor GitHub training • HTML/CSS/JS • Geen echte medische/technische garantie 😉</p>
+    </footer>
+  </main>
+
+  <script src="contact.js"></script>
+</body>
+</html>
